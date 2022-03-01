@@ -1,13 +1,21 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
+  :root{
+    --background: #111213;
+
+    --grey: #3a3a3c;
+    --white: #fff;
+  }
+
   *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-size: 16px; */
   }
 
-  html{
+  /* html{
     @media (max-width: 1080px){
       font-size: 93.75%;
     }
@@ -15,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
     @media (max-width: 720px){
       font-size: 87.5%;
     }
-  }
+  } */
 
   body, input, textArea, button{
     font-family: 'Roboto', sans-serif;
@@ -27,6 +35,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body{
+    background: var(--background);
     -webkit-font-smoothing: antialiased;
   }
 

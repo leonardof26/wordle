@@ -1,9 +1,12 @@
+import { Keyboard } from '../../components/Keyboard'
+import { Board } from '../../components/Board'
 import { Container } from './styles'
 
 function Main() {
   return (
     <Container>
-      <h1>Olar</h1>
+      <Board />
+      <Keyboard />
     </Container>
   )
 }
